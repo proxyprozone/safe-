@@ -1,40 +1,20 @@
-# My Shop Website
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-This is a full-stack e-commerce website built with React, Vite, Express, and SQLite.
+# Run and deploy your AI Studio app
 
-## Features
-- Product listing and shopping cart
-- UPI Payment integration with QR Code
-- Admin Dashboard for managing products and settings
-- SQLite database for persistent storage
+This contains everything you need to run your app locally.
 
-## Local Development
+View your app in AI Studio: https://ai.studio/apps/1b22e9df-e849-4841-a38e-52859c92e037
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
 
 1. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-3. Open your browser and navigate to `http://localhost:3000`
-
-## Admin Access
-- **URL:** `/admin`
-- **Default Username:** `karl90`
-- **Default Password:** `karl906284151703`
-
-## Deployment to Render
-
-1. Create a new Web Service on Render connected to your GitHub repository.
-2. Use the following settings:
-   - **Environment:** `Node`
-   - **Build Command:** `npm install --include=dev && npm run build`
-   - **Start Command:** `npm start`
-3. Add a Disk for persistent database storage:
-   - **Name:** `database`
-   - **Mount Path:** `/opt/render/project/src/data`
-   - **Size:** `1 GB`
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
